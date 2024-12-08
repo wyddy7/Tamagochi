@@ -2,3 +2,4 @@ __pycashe__/
 *.pyc
 *.pyo
 .env
+.idea/
