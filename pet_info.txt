@@ -1,0 +1,5 @@
+hunger: 91.46
+sleep: 97.69
+joy: 80.37
+music_volume: 0.41
+sound_volume: 0.63
