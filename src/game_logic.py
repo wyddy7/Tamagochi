@@ -364,6 +364,10 @@ class TamagochiGame:
                 self.food_sound.play()
         else:
             self.food_sound.stop()
+        
+        # Обновляем спрайт кота в зависимости от голода
+        if not self.is_lamp_on:
+            self.check_hunger()
     
     def update_joy(self):
         """Обновление уровня радости."""
@@ -417,6 +421,8 @@ class TamagochiGame:
         else:
             self.lamp_image = self.lamp_image_off
             self.current_background = self.background_light
+            # Возвращаем правильный спрайт кота по голоду
+            self.check_hunger()
     
     def is_cat_sleeping(self):
         """Проверка, включена ли лампа для сна."""
